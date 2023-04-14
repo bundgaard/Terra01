@@ -7,7 +7,7 @@ class JsonLexerTest {
     }
     @org.junit.jupiter.api.Test
     void nextToken() {
-        var lexer = new JsonLexer("[1,2,3,4]");
+        var lexer = new JsonLexer("[1, 2, 3, 4, true, false, null, {\"foo\": \"baz\"}]");
         JsonToken token = lexer.nextToken();
         while(token.getType() != JsonToken.Type.Eof){
             System.out.println(token);

@@ -7,7 +7,7 @@ public class JsonToken {
     private final Type type;
 
     public enum Type {
-        ArrayOpen, ArrayClosed, ObjectOpen, ObjectClosed, Digit, Comma, String, Boolean, Null, Eof,
+        ArrayOpen, ArrayClosed, ObjectOpen, ObjectClosed, Digit, Comma, String, Boolean, Null, Eof, Colon,
     }
 
 
